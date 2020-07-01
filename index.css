@@ -1,0 +1,510 @@
+body {
+  margin: 0;
+  background-color: #F8F8F8;/*rgba(255, 255, 255, 0.884);*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.border {
+  border-radius: 3px;
+}
+
+.ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(96, 172, 216, 0.74);
+}
+
+.li {
+  float: right;
+  cursor: pointer;
+}
+
+.li a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.li a:hover {
+  background-color: #F8F8F8;
+  color: rgba(13, 145, 221, 0.74);
+}
+
+.user {
+  margin-left: 240px;
+  font-size: 30px;
+}
+
+.user1 {
+  width: 26px;
+  margin-left: -37.5px;
+  margin-bottom: -6.5px;
+  float: rigth;
+}
+
+.key {
+  width: 26px;
+  margin-left: -38.8px;
+}
+
+.logo {
+  float: left; 
+  padding: 5px 5px 0px 8px;
+  font-size: 30px;
+}
+
+
+/* todolist */
+
+.create {
+  background-color: rgb(90, 90, 236);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.search {
+  margin: 6px 0px;
+  padding: 5px;
+  width: 195px;
+  outline: none;
+  font-size: 20px;
+  color: rgb(77, 77, 230);
+  border: 1px rgb(77, 77, 230) solid;
+}
+
+.search-logo {
+  width: 20px;
+  margin-bottom: -2px;
+  margin-left: -23px; 
+  cursor: pointer;
+}
+
+.create-logo, .add-logo {
+  width: 35px;
+  margin-bottom: -2px;
+  margin-left: -22px; 
+  margin: 4px 4px 0px 0px;
+  cursor: pointer;
+  float: right;
+  margin-left: 7px;
+}
+
+/* list */
+
+.list-area {
+  position: fixed;
+  text-align: center;
+  background-color: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 86.5%;
+  overflow: auto;
+  margin-top: 47px;
+}
+
+.list-scroll {
+  overflow: auto;
+}
+
+.list-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.list {
+  max-width: 540px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 22px;
+  background-color: white;
+  -webkit-animation: delay 1s;
+  animation: delay 1s;
+}
+
+
+@-webkit-keyframes delay {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes delay {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+
+header {
+  margin: 5px 5px 4px 5px;
+  float: left;
+  font-size: 30px;
+  width: 100%;
+}
+
+.title-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 10fr 2fr;
+}
+
+
+.titleText {
+  grid-column-start: 2;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  height: 36px;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.headhr {
+  margin: 7px;
+}
+
+.task-line {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+}
+
+.textarea {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.credent {
+  grid-column-start: 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.subcredent {
+  grid-row-start: 2;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+}
+
+.subL {
+  width: 90%;
+}
+
+.subR {
+  margin: -15px;
+}
+
+.date-color, .subL, .subR {
+  color: rgb(8, 87, 161);
+}
+
+.taskhr {
+  margin: 7px 7px 7px 0px;
+}
+
+@media screen and (max-width: 502px) {
+  .list {
+    width: 100%;
+  }
+} 
+
+.check {
+  width: 100%;
+}
+
+.check, .delete {
+  margin-left: -13px;
+}
+
+.check {
+  background-color: green;
+}
+
+.delete {
+  color: rgb(231, 68, 68);
+  font-size: 18px;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.size {
+  font-size: 26px;
+  margin-top: -3px;
+  margin-left: 25px;
+}
+
+.date, .time, .date1, .time1 {
+  margin: 0px 7px 0px 3px;
+}
+
+.time {
+  margin: 0px 3px 0px 3px;
+}
+
+.timeEnd {
+  margin: 0px 7px 0px 1.5px;
+}
+
+.date, .date1 {
+  border: none;
+  outline: none;
+  background-color: rgb(213, 203, 241);
+}
+
+.time, .time1, .timeEnd {
+  margin-top: 2px;
+  border: none;
+  outline: none;
+  background-color: bisque;
+}
+
+.add {
+  font-size: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(75, 236, 75);
+  color: white;
+  padding: 0px 9px;
+  width: 40%;
+  margin-left: 7px;
+}
+
+.adder {
+  display: grid;
+  grid-template-columns: 1.1fr 7.3fr 3fr;
+  margin-bottom: 9px;
+}
+
+.addText {
+  font-size: 20px;
+  max-width: 79px;
+  color: #6d6b6b;
+}
+
+.add-logo {
+  width: 30px;
+  margin-top: 0px;
+  margin-bottom: 11px;
+}
+
+.tick {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.done {
+  grid-column-start: 3;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 3px;
+}
+
+.login-form {
+  background-color: rgba(96, 172, 216, 0.74);
+  max-width: 350px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.user-email, .user-password, .username {
+  margin: 10px;
+  width: 83%;
+  padding: 7px;
+  font-size: 18px;
+  border: 1px rgb(77, 77, 230) solid;
+  border: none;
+  outline: none;
+  color: rgb(77, 77, 230);
+}
+
+.user-email {
+  margin-top: 20px;
+}
+
+.username {
+  margin: 9px;
+}
+
+.login-btn {
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  background-color: rgb(235, 173, 59);
+  outline: none;
+  padding: 5px 15px 5px 15px;
+}
+
+.alert {
+  color: rgb(231, 66, 66);
+}
+
+.success {
+  color: rgb(7, 153, 7);
+}
+
+.empty {
+  color: rgb(151, 45, 151);
+}
+
+.user-image {
+  width: 15px;
+  margin-left: -27px;
+  margin-top: -3px;
+}
+
+.selection-bar {
+  width: 46%;
+  float: left;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.selection-bar:hover {
+  background-color: rgba(145, 199, 229, 0.74);
+}
+
+.selection-bar a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.color {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: none;
+  margin-top: 8px;
+  width: 22px;
+  height: 25px;
+  border-radius: 10px;
+}
+
+/* create list */
+
+/*.list-align {
+  background-color: aqua;
+}
+
+.create-list {
+  float: left;
+  width: 320px;
+  margin: 15px 15px 0px 15px;
+  margin-bottom: 20px;
+  background-color: white;
+  -webkit-animation: delay 1s;
+  animation: delay 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.list {
+  text-align: center;
+  display: block;
+  display: inline;
+  background-color: aquamarine;
+}
+
+.list-index {
+  margin-left: -10px;
+}
+
+.title-size {
+  font-size: 26px;
+}
+
+.task-size {
+    font-size: 19.4px;
+}
+
+.date1, .time1 {
+  font-size: 12px;
+  padding-top: 3.5px;
+}
+background-color: skyblue;
+  margin: 15px 15px 0px 15px;
+  margin-bottom: 20px; #fbc37f
+  
+*/
+::-webkit-scrollbar {
+  width: 0px
+}
+
+.notFound {
+  color: #f0b670;
+  font-size: 35px;
+  font-weight: 80px;
+}
+
+.lists {
+  height: 588px;
+  overflow: scroll;
+}
+
+.create-list {
+  max-width: 320px;
+  margin: 15px 16px 15px 5px;
+  margin-bottom: 20px;
+  float: left;
+  background-color: white;
+  -webkit-animation: delay 1s;
+  animation: delay 1s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media screen and (max-width: 356px) {
+  .create-list {
+    width: 90%;
+  }
+}
+
+.list-index {
+  margin-left: -10px;
+}
+
+.title-size {
+  font-size: 26px;
+}
+
+.task-size {
+    font-size: 19.4px;
+}
+
+.date1, .time1 {
+  font-size: 12px;
+  padding-top: 3.5px;
+}
+
+.setColor {
+}
+
+.liTask {
+  margin-top: -8px;
+}
+
+/*
+#5ae991
+rgb(241, 180, 66)
+#56b3e9
+background-color: blue;
+*/
